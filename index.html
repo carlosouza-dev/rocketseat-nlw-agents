@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NLW Agents</title>
+    <link rel="shortcut icon" href="assets/ico.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./assets/logo.png" alt="Logo esports NLW" />
+    </header>
+    <main>
+      <section>
+        <div>
+          <h1>Assistente de Meta</h1>
+          <p>Pergunte sobre estratégias, build e dicas para seus jogos!</p>
+
+          <form id="form" autocomplete="off">
+            <input
+              id="apiKey"
+              type="password"
+              placeholder="Informe a API Key do Gemini"
+              required
+            />
+
+            <input
+              type="text"
+              id="gameSelect"
+              list="gameList"
+              placeholder="Selecione ou digite seu jogo"
+            />
+            <datalist id="gameList">
+              <option value="Fortnite"></option>
+              <option value="Minecraft"></option>
+              <option value="Roblox"></option>
+              <option value="PUBG"></option>
+              <option value="Genshin Impact"></option>
+              <option value="League of Legends"></option>
+              <option value="Valorant"></option>
+              <option value="Call of Duty"></option>
+              <option value="Apex Legends"></option>
+              <option value="Free Fire"></option>
+            </datalist>
+
+            <input
+              id="questionInput"
+              type="text"
+              placeholder="Ex: Melhor estratégia para vitória"
+            />
+            <button id="askButton">Perguntar</button>
+          </form>
+
+          <div id="aiResponse" class="hidden">
+            <div class="response-content"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Icons by
+        <a href="https://icons8.com.br" target="_blank" rel="external">Icons8</a>
+      </p>
+    </footer>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

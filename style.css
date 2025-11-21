@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100dvh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Inter";
+  min-height: 100dvh;
+  height: 100%;
+  line-height: 160%;
+
+  background: #121214 url(./assets/bg.jpg) top center no-repeat fixed;
+  background-size: 100% auto;
+  color: white;
+}
+
+header {
+  padding-top: 2em;
+  text-align: center;
+
+  & img.logo {
+    width: 15rem;
+  }
+}
+
+main {
+  flex-grow: 1;
+  margin: 3rem auto;
+  max-width: 36rem;
+  width: 90%;
+}
+
+section {
+  padding-top: 4px;
+  background-image: linear-gradient(
+    90deg,
+    #9572fc 0%,
+    #43e7ad 20%,
+    #e2d45c 40%,
+    #9572fc 60%,
+    #43e7ad 80%,
+    #e2d45c 100%
+  );
+  background-size: 250%;
+  
+  border-radius: 0.625rem;
+  transition: ease-in-out;
+  animation: appear 1s forwards;
+  animation: slideColors 5s linear infinite normal;
+}
+
+section > div {
+  padding: 2rem;
+  padding-top: 1.5rem;
+  background-color: #2a2634;
+  border-radius: 0.5rem;
+}
+
+section > div > p{
+  margin-top: 10px;
+  color: #a1a1aa;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  flex-flow: row wrap;
+  margin: 1.25rem 0;
+}
+
+input,
+select {
+  all: unset;
+  border: 2px solid #9147ff;
+  border-radius: 0.5rem;
+  padding: 0.625rem;
+  font-size: 0.875rem;
+  background-color: #00000066;
+}
+
+input {
+  flex: 1 1 auto;
+  transition: all 0.1s;
+}
+
+#apiKey {
+  flex: 1 1 48%;
+}
+
+#gameSelect {
+  flex: 0 1 38%;
+}
+
+button {
+  border: none;
+  width: 100%;
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(
+    250deg,
+    #9572fc 0%,
+    #43e7ad 50%,
+    #e2d45c 100%
+  );
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.1s;
+}
+
+#aiResponse {
+  background-color: rgb(0, 0, 0, 0.4);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border-left: 4px solid #43e7ad;
+  line-height: 1.8rem;
+}
+
+#aiResponse ul, ol, dl {
+  list-style-position: inside;
+}
+
+.hidden {
+  display: none;
+}
+
+footer{
+  font-size: small;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+footer p {
+  color: #a1a1aa;
+}
+
+footer a {
+  text-decoration: none;
+  color: #a1a1aa;
+}
+
+footer a:hover {
+  color: white;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 1rem #fff86b33;
+  }
+
+  input:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 1rem #a47dff49;
+  }
+
+  select:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 1rem #a47dff49;
+  }
+}
+
+button:active {
+  transform: scale(99%);
+}
+
+button:disabled {
+  transform: initial;
+  box-shadow: initial;
+  cursor: not-allowed;
+  color: black;
+}
+
+.loading {
+  animation: pulse 1s infinite;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes slideColors {
+  0% {
+    background-position: left;
+  }
+
+  100% {
+    background-position: right;
+  }
+}
