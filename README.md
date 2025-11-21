@@ -1,67 +1,37 @@
-# HTML
-- HypertText
-    - Textos puros, livros, revistas, jornais;
-    - Links: acessar outros documentos;
-    - Imagens, vídeos, áudios;
-- Markup
-    - Marcação
-    - Tags: <a> Link </a>
-    - Atributos: <a href="https://rocketseat.com.br"> </a>
-    - Globais: id, class, ...
-- Language
-    - Linguagem
-    - Sintaxe: maneira de escrever
+# 💻 NLW Agents - Iniciante 🚀
 
-# HTTP
-- HyperText
-- Transfer
-    - Transferência
-- Protocol
-    - Protocolo
-    - Conjunto de regras
+> Repositório dedicado ao armazenamento do certificado e materiais do evento **NLW Agents - Iniciante** da Rocketseat.
 
-# URL
-- Uniform
-    - Uniforme
-- Resource
-    - Recurso
-- Locator
-    - Localizador
-Encontrar um recurso (html, css, js, pdf, jpg, mp4, mpr, ...)
-Endereço
+## 📜 Sobre o Evento
 
-# IP
-- Internet
-  - Rede mundial de computadores
-- Protocol
-  - Conjunto de regras
-Endereço do computador
-rocketseat.com.br (domínio)
-123.32.1.23 (ip)
+O **NLW Agents - Iniciante** foi um evento focado em introduzir os participantes aos fundamentos da programação web, estrutura de páginas com HTML, estilização de páginas com CSS e, o principal foco, a **Introdução Prática à Inteligência Artificial (IA)**.
 
-# DNS
-- Domain
-  - Domínio
-- Name
-  - Nome
-- Server
-  - Servidor
+Durante o evento, foram abordados temas essenciais para quem busca iniciar ou aprofundar conhecimentos em IA no contexto de desenvolvimento:
 
-# CSS
+* **LLMs (Large Language Models):** Entendimento de como funcionam e suas aplicações.
+* **Agentes de IA:** Construção de sistemas que utilizam LLMs para executar tarefas de forma autônoma.
+* **Técnicas de Prompt Engineering:** Otimização de comandos para obter melhores resultados dos modelos.
 
-- Cascading
-  - Cascata
-  - Regras das escritas
-  - Hierarquia
-  - Especificidade
-- Style
-  - Estilo
-- Sheet
-  - Folha
+---
 
-De um arquivo que terá na sua sintaxe, declarações, propriedades e valores.
-A partir disso, o HTML é impactado visualmente.
+## 🏅 Certificado de Conclusão
 
-- declaração
-- seletor
-- propriedade e valor
+Este repositório serve como prova de participação e conclusão do evento.
+
+* **Participante:** Carlos Henrique Souza Da Silva
+* **Tipo de Conteúdo:** Evento
+* **Data de Emissão:** 13/07/2025
+* **Carga Horária:** 5 horas
+* **Código de Validação:** `335188d7-2e07-44fe-a241-008e01f123b4`
+
+
+---
+
+## 🛠️ Tecnologias e Conceitos Abordados
+
+Apesar de ser um evento introdutório, os seguintes pilares foram explorados:
+
+* **HTML e CSS:** Fundamentos de estruturação e estilização web.
+* **JavaScript:** Lógica básica para interação web.
+* **Inteligência Artificial (IA):** Conceitos básicos e aplicações práticas.
+* **LLMs (Large Language Models):** Uso e implementação.
